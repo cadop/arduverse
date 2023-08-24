@@ -11,3 +11,5 @@ To use:
 - To use the base file, in omniverse create a python behavior script on any xform, and attach the script (e.g. *puppet_handle_1.py*)
 
 Open an issue if you have problems. Also if you want to contribute go for it. 
+
+![Featured Puppet Image](https://github.com/cadop/arduverse/blob/main/FeaturedImg.png?raw=true)
