@@ -23,6 +23,7 @@ class Puppet2(BehaviorScript):
 
     def on_destroy(self):
         print(f"{__class__.__name__}.on_destroy()->{self.prim_path}")
+        self.sock.close()
         self.sock = None
         rot = [0, 0, 0]
         self.prim.GetAttribute('xformOp:rotateXYZ').Set(Gf.Vec3d(rot))
@@ -73,3 +74,4 @@ class Puppet2(BehaviorScript):
             except BlockingIOError:
                 # No more data to read (buffer is empty)
                 return latest_data
+            
